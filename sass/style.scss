@@ -7,6 +7,7 @@
 body {
   margin: 0;
   font-family: "Lato";
+  background: #fafcfe;
 }
 
 .container {
@@ -26,6 +27,7 @@ header {
   background-image: url(/images/hero-01.jpg);
   background-size: cover;
   background-position: center;
+  
   nav img {
     float: left;
     margin: 0;
@@ -76,6 +78,7 @@ header {
   .scroll {
     position: relative;
     margin-top: 150px;
+    
     a {
       text-decoration: none;
     }
@@ -92,9 +95,51 @@ header {
       font-size: 12px;
     }
   }
-  .arrow-bot img {
-    width: 100%;
-    height: 25vh;
+  .arrow-bot {
+     width: 100%;
+    height: auto;
     margin-top: -100%;
+    margin-bottom: -3.6px;
+  }
+}
+.services {
+  text-align: center;
+  margin-top: 40px;
+  h2 {
+    color: #2980b9;
+    text-transform: uppercase;
+    margin: 0 auto;
+    font-weight: 600;
+  }
+  hr {
+  
+    background-color: #2980b9;
+    width: 40px;
+    height: 8px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .card {
+    color: #616161;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    img{
+      width: 50px;
+      height: auto;
+      filter: opacity(.5)    ;
+      -webkit-filter: opacity(.5)    ;
+}
+    p {
+      padding: 0 40px;
+      max-width: 80%;
+    }
+    
   }
 }
