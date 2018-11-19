@@ -264,6 +264,7 @@ header .scroll p {
 /*===TEAM===*/
 .team {
   margin-top: 40px;
+  width: 100%;
 }
 
 .team p {
@@ -286,9 +287,10 @@ header .scroll p {
 }
 
 .team .card .image img {
-  width: 300px;
-  height: 300px;
+  height: 250px;
+  width: 250px;
   object-fit: cover;
+  display: block;
 }
 
 .team .card .layer .icon {
@@ -301,6 +303,7 @@ header .scroll p {
 
 .team .card .layer .icon img {
   margin-top: 10px;
+  margin-left: 10px;
   width: 40px;
   height: 40px;
   background: #fff;
@@ -318,16 +321,12 @@ header .scroll p {
 
 @media (max-width: 992px) {
   .row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
+  }
+  .layer .row {
+    flex-direction: row;
   }
 }
 
