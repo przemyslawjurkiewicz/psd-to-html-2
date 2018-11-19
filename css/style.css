@@ -22,10 +22,21 @@ body {
   clear: both;
 }
 
+section {
+  background-size: cover;
+  background-position: center;
+}
+
 h2 {
   text-transform: uppercase;
   margin: 0 auto;
   font-weight: 600;
+}
+
+p {
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
 }
 
 hr {
@@ -94,8 +105,6 @@ hr {
 /*===HEARER===*/
 header {
   background-image: url(/images/hero-01.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 header nav img {
@@ -133,12 +142,6 @@ header .slogan > img {
   height: 120px;
 }
 
-header .slogan p {
-  color: #fff;
-  font-weight: 300;
-  font-size: 14px;
-}
-
 header .slogan .btn {
   margin-top: 20px;
   height: 40px;
@@ -170,9 +173,7 @@ header .scroll .icon {
 }
 
 header .scroll p {
-  color: #fff;
   text-transform: uppercase;
-  font-weight: 300;
   font-size: 12px;
 }
 
@@ -199,6 +200,7 @@ header .scroll p {
 }
 
 .services .card p {
+  color: #616161;
   padding: 0 40px;
   max-width: 80%;
 }
@@ -206,7 +208,7 @@ header .scroll p {
 /*===PORTFOLIO===*/
 .portfolio {
   background-image: url(/images/hero-02.jpg);
-  background-size: cover;
+  background-position: 0% 0%;
 }
 
 .portfolio h2 {
@@ -242,7 +244,6 @@ header .scroll p {
 }
 
 .portfolio .gallery .image .layer p {
-  color: #fff;
   font-size: 1.5em;
   font-weight: 600;
 }
@@ -271,14 +272,15 @@ header .scroll p {
   width: 100%;
 }
 
-.team p {
-  display: inline-block;
-  color: #2980b9;
-  max-width: 400px;
+.team .row {
+  justify-content: space-between;
 }
 
-.team .card {
-  padding: 20px;
+.team p {
+  margin-bottom: 70px;
+  display: inline-block;
+  max-width: 400px;
+  color: #616161;
 }
 
 .team .card .image {
@@ -339,9 +341,6 @@ header .scroll p {
 /*===OFFICES===*/
 .offices {
   background-image: url(/images/hero-03.jpg);
-  background-size: cover;
-  background-position: center;
-  text-align: center;
 }
 
 .offices h2 {
@@ -351,15 +350,65 @@ header .scroll p {
 .offices p {
   margin: 30px auto;
   display: block;
-  color: #fff;
   max-width: 400px;
 }
 
 .offices .map {
-  margin: 40px auto;
+  margin: 40px auto 100px;
   display: block;
   width: 60%;
   height: auto;
+}
+
+/*===CLIENTS===*/
+.clients {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.clients p {
+  display: inline-block;
+  max-width: 400px;
+  color: #616161;
+  margin-bottom: 50px;
+}
+
+.clients .row {
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+/*===CONTACT===*/
+.contact {
+  background-image: url(/images/hero-04.jpg);
+  text-align: center;
+}
+
+.contact h2 {
+  margin-top: 70px;
+}
+
+.contact hr {
+  margin-bottom: 30px;
+}
+
+.contact p {
+  margin: 0 auto;
+  display: block;
+  max-width: 400px;
+  margin-bottom: 70px;
+}
+
+.contact .icon {
+  margin: 10px 100px;
+  width: 50px;
+  height: auto;
+  filter: invert(100%);
+}
+
+.contact h3 {
+  color: #fff;
+  margin: 0;
 }
 
 @media (max-width: 992px) {
@@ -370,6 +419,8 @@ header .scroll p {
   }
   .layer .row {
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 

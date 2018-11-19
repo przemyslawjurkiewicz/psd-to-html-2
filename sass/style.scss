@@ -1,4 +1,6 @@
 /*===GLOBAL===*/
+$basic-color: #2980b9;
+$text-color: #616161;
 
 * {
   box-sizing: border-box;
@@ -9,7 +11,6 @@ body {
   font-family: "Lato";
   background: #fafcfe;
 }
-
 .container {
   width: 100%;
   max-width: 1200px;
@@ -22,21 +23,29 @@ body {
     clear: both;
   }
 }
-
+section {
+  background-size: cover;
+  background-position: center;
+}
 h2 {
   text-transform: uppercase;
   margin: 0 auto;
   font-weight: 600;
+}
+p {
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
 }
 hr {
   width: 40px;
   height: 8px;
 }
 .h2-dark {
-  color: #2980b9;
+  color: $basic-color;
 }
 .hr-dark {
-  background: #2980b9;
+  background: $basic-color;
   border: none;
 }
 .h2-bright {
@@ -46,7 +55,6 @@ hr {
   border: none;
   background: #fff;
 }
-
 .row {
   width: 100%;
   display: flex;
@@ -55,26 +63,22 @@ hr {
   justify-content: center;
   align-items: flex-start;
 }
-
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-
 .arrow-bot {
   width: 100%;
   height: auto;
   margin-top: -100%;
   margin-bottom: -3.6px;
 }
-
 .arrow-top {
   width: 100%;
   height: auto;
 }
-
 .layer {
   background: rgba(41, 128, 185, 0.8);
   position: absolute;
@@ -88,12 +92,8 @@ hr {
 }
 
 /*===HEARER===*/
-
 header {
   background-image: url(/images/hero-01.jpg);
-  background-size: cover;
-  background-position: center;
-
   nav img {
     float: left;
     margin: 0;
@@ -122,11 +122,6 @@ header {
       margin-top: 200px;
       height: 120px;
     }
-    p {
-      color: #fff;
-      font-weight: 300;
-      font-size: 14px;
-    }
     .btn {
       margin-top: 20px;
       height: 40px;
@@ -154,24 +149,21 @@ header {
       filter: invert(100%);
     }
     p {
-      color: #fff;
       text-transform: uppercase;
-      font-weight: 300;
       font-size: 12px;
     }
   }
 }
 
 /*===SERVICES===*/
-
 .services {
   text-align: center;
   margin-top: 40px;
-   hr {
+  hr {
     margin-bottom: 50px;
   }
   .card {
-    color: #616161;
+    color: $text-color;
     padding: 20px;
     img {
       width: 50px;
@@ -180,6 +172,7 @@ header {
       -webkit-filter: opacity(0.5);
     }
     p {
+      color: #616161;
       padding: 0 40px;
       max-width: 80%;
     }
@@ -187,11 +180,9 @@ header {
 }
 
 /*===PORTFOLIO===*/
-
 .portfolio {
   background-image: url(/images/hero-02.jpg);
-  background-size: cover;
-
+  background-position: 0% 0%;
   h2 {
     margin-top: 70px;
   }
@@ -220,7 +211,6 @@ header {
       }
       .layer {
         p {
-          color: #fff;
           font-size: 1.5em;
           font-weight: 600;
         }
@@ -246,17 +236,19 @@ header {
 }
 
 /*===TEAM===*/
-
 .team {
   margin-top: 40px;
   width: 100%;
+  .row {
+    justify-content: space-between;
+  }
   p {
+    margin-bottom: 70px;
     display: inline-block;
-    color: #2980b9;
     max-width: 400px;
+    color: #616161;
   }
   .card {
-    padding: 20px;
     .image {
       position: relative;
       min-width: 0;
@@ -282,10 +274,10 @@ header {
         background: #fff;
         border-radius: 50%;
         &:hover {
-          background:#2980b9;
+          background: $basic-color;
           img {
-            background:#2980b9;
-          }  
+            background: $basic-color;
+          }
         }
         img {
           margin-top: 10px;
@@ -293,44 +285,82 @@ header {
           width: 40px;
           height: 40px;
           background: #fff;
-
         }
       }
     }
     h3 {
       margin: 0;
-      color: #2980b9;
+      color: $basic-color;
     }
     p {
       margin: 0;
-      color: #616161;
+      color: $text-color;
     }
   }
 }
 
 /*===OFFICES===*/
-
 .offices {
   background-image: url(/images/hero-03.jpg);
-  background-size: cover;
-  background-position: center;
-  text-align: center;
   h2 {
     margin-top: 70px;
   }
   p {
     margin: 30px auto;
     display: block;
-    color: #fff;
     max-width: 400px;
   }
   .map {
-    margin: 40px auto;
+    margin: 40px auto 100px;
     display: block;
     width: 60%;
     height: auto;
   }
 }
+
+/*===CLIENTS===*/
+.clients {
+  margin-top: 40px;
+  width: 100%;
+  p {
+    display: inline-block;
+    max-width: 400px;
+    color: $text-color;
+    margin-bottom: 50px;
+  }
+  .row {
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+}
+
+/*===CONTACT===*/
+.contact {
+  background-image: url(/images/hero-04.jpg);
+  text-align: center;
+  h2 {
+    margin-top: 70px;
+  }
+  hr {
+    margin-bottom: 30px;
+  }
+  p {
+    margin: 0 auto; 
+    display: block;
+    max-width: 400px;
+    margin-bottom: 70px;
+  }
+  .icon {
+      margin: 10px 100px;
+      width: 50px;
+      height: auto;
+      filter: invert(100%);
+    }
+  h3{
+    color: #fff;
+    margin: 0;
+  }
+  }
 
 @media (max-width: 992px) {
   .row {
@@ -340,5 +370,8 @@ header {
   }
   .layer .row {
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
+  
 }
