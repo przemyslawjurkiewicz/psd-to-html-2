@@ -25,6 +25,7 @@ body {
 section {
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 h2 {
@@ -105,6 +106,14 @@ hr {
 /*===HEARER===*/
 header {
   background-image: url(/images/hero-01.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header input,
+header label {
+  display: none;
 }
 
 header nav img {
@@ -122,6 +131,11 @@ header nav ul {
 
 header nav ul > li {
   display: inline-block;
+}
+
+header nav ul > li:hover a {
+  color: #2980b9;
+  background: #fff;
 }
 
 header nav ul > li > a {
@@ -154,6 +168,11 @@ header .slogan .btn {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+}
+
+header .slogan .btn:hover {
+  color: #2980b9;
+  background: #fff;
 }
 
 header .scroll {
@@ -421,6 +440,25 @@ header .scroll p {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+  header label {
+    font-size: 35px;
+    padding-right: 10px;
+    color: #fff;
+    display: block;
+    float: right;
+  }
+  header nav ul > li > a {
+    text-align: center;
+  }
+  #menu-button:not(:checked) ~ ul {
+    display: none;
+  }
+  #menu-button:checked ~ ul {
+    width: block;
+  }
+  #menu-button:checked ~ ul li {
+    width: 100%;
   }
 }
 
