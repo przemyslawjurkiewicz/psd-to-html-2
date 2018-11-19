@@ -167,6 +167,9 @@ header {
 .services {
   text-align: center;
   margin-top: 40px;
+   hr {
+    margin-bottom: 50px;
+  }
   .card {
     color: #616161;
     padding: 20px;
@@ -263,6 +266,7 @@ header {
         }
       }
       img {
+        border-radius: 5px;
         height: 250px;
         width: 250px;
         object-fit: cover;
@@ -270,18 +274,26 @@ header {
       }
     }
     .layer {
+      border-radius: 5px;
       .icon {
         width: 60px;
         height: 60px;
         margin: 5px;
         background: #fff;
         border-radius: 50%;
+        &:hover {
+          background:#2980b9;
+          img {
+            background:#2980b9;
+          }  
+        }
         img {
           margin-top: 10px;
           margin-left: 10px;
           width: 40px;
           height: 40px;
           background: #fff;
+
         }
       }
     }
@@ -293,6 +305,30 @@ header {
       margin: 0;
       color: #616161;
     }
+  }
+}
+
+/*===OFFICES===*/
+
+.offices {
+  background-image: url(/images/hero-03.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  h2 {
+    margin-top: 70px;
+  }
+  p {
+    margin: 30px auto;
+    display: block;
+    color: #fff;
+    max-width: 400px;
+  }
+  .map {
+    margin: 40px auto;
+    display: block;
+    width: 60%;
+    height: auto;
   }
 }
 
