@@ -167,10 +167,6 @@ header {
       color: #fff;
       border: 2px solid #fff;
       border-radius: 5px;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      -ms-border-radius: 5px;
-      -o-border-radius: 5px;
       &:hover {
         color: $basic-color; 
         background:#fff;
@@ -276,11 +272,7 @@ header {
           height: auto;
           margin-top: 50px;
           border-radius: 50%;
-          -webkit-border-radius: 50%;
-          -moz-border-radius: 50%;
-          -ms-border-radius: 50%;
-          -o-border-radius: 50%;
-        }
+          }
       }
 
       .item {
